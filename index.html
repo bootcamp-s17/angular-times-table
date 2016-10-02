@@ -61,9 +61,12 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="well well-lg" ng-show="selectedTableValue">
-                <p class="lead">
+            <div class="well well-lg">
+                <p class="lead" ng-show="selectedTableValue">
                     {{ selectedTableValue.x }} &times; {{ selectedTableValue.y }} = {{ selectedTableValue.result }}
+                </p>
+                <p class="lead" ng-show="!selectedTableValue">
+                    Hover over a field above
                 </p>
             </div>
         </div>
